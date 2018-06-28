@@ -7,7 +7,7 @@ An android-specific plugin to enable a Youtube Player overtop of Unity
 
 - Use the following code in your Unity script to interact with the plugin
 
-#Create custom activity with needed info to play a youtube video
+Create custom activity with needed info to play a youtube video
 
 		try{
 			//Creates an AndroidJavaClass object
@@ -24,9 +24,10 @@ An android-specific plugin to enable a Youtube Player overtop of Unity
 			Debug.Log("Error: Not on android");
 		}
 
-#Creates the YoutubePlayer fragment in Android, adds it to the fragment manager, and plays the video
+Creates the YoutubePlayer fragment in Android, adds it to the fragment manager, and plays the video
 
 		try{
+			//Pass the Youtube video id to create the player with
 			_customActivity.CallStatic("CreatePlayer", videoId);
 		}
 		catch{

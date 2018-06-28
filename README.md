@@ -8,6 +8,7 @@ An android-specific plugin to enable a Youtube Player overtop of Unity
 - Use the following code in your Unity script to interact with the plugin
 
 #Create custom activity with needed info to play a youtube video
+
 		try{
 			//Creates an AndroidJavaClass object
 			_customActivity = new AndroidJavaClass("com.projectsmile.youtube_reward.Youtube_Reward");
